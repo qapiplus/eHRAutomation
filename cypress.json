@@ -1,0 +1,14 @@
+{
+    "baseUrl": "https://ehrplus-dev.azurewebsites.net/",
+    "experimentalStudio": true,
+    "chromeWebSecurity": false,
+    "video": false,
+    "projectId": "",
+    "supportFile": "cypress/support/index.js",
+    "viewportWidth": 1200,
+    "viewportHeight": 800,
+    "requestTimeout": 8000,
+    "defaultCommandTimeout": 8000,
+    "testFiles": "**/*.@(spec|chromium).js"
+  }
+  
