@@ -1,4 +1,17 @@
 {
-    "email": "blabla@bla.com",
-    "password": "blabla"
+    "correctEmail": "louisaharutyunyan7@gmail.com",
+    "correctPassword": "!QAZ2wsx",
+    "incorrectEmail": "hgie",
+    "incorrectPassword": "123",
+    "adminEmail": "admin",
+    "adminPassword": "Arm3nia!",
+    "ValidName": "Louisa",
+    "ValidSurname": "Harutyunyan",
+    "ValidEmail": "licoc15782@qqhow.com",
+    "ExistingEmail": "lui.zharutyunyan@gmail.com",
+    "ValidPhoneNumber": "1234567899",
+    "ValidPassword": "eHRPLus123!",
+    "newPassword": "LouisHar7!",
+    "confirmNewPassword": "LouisHar7!",
+    "confirmNotMatchingpassword":"LouisHar7"
 }
