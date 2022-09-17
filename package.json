@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/qapiplus/eHRAutomation#readme",
   "devDependencies": {
-    "cypress": "^9.5.4"
+    "cypress": "^9.7.0"
   }
 }

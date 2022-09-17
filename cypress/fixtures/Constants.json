@@ -1,4 +1,14 @@
 {
-    "email": "blabla@bla.com",
-    "password": "blabla"
+    "CorrectEmail": "louisaharutyunyan7@gmail.com",
+    "CorrectPassword": "LouisHar7!",
+    "IncorrectEmail": "123",
+    "IncorrectPassword": "456",
+    "adminUsername": "admin",
+    "adminPassword": "Arm3nia!",
+    "name": "LouisA",
+    "surname": "Brown",
+    "ExistingEmailAddress": "louisaharutyunyan7@gmail.com",
+    "EmailAddress": "radball6@filevino.com",
+    "ValidPassword": "!QAZ2wsx",
+    "InvalidPassword": "123"
 }
