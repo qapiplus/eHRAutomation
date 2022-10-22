@@ -13,10 +13,9 @@ class BasePage {
         selectors.alertPopupContinueButton().click();
     }
 
-    checkpageHeaderp3(header){
-        selectors.pageHeaderh3().should('contain.text', `${header}`);
+    pageHeaderh3(){
+        selectors.pageHeaderh3().should('contain.text', 'Welcome eHR!');
     }
-
     
 }
 export default BasePage;

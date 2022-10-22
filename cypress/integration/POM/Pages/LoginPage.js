@@ -5,11 +5,11 @@ import * as constants from "../../../fixtures/Constants.json";
 export class LoginPage extends BasePage{
 
     inputCorrectEmail() {
-        selectors.userNameField().type(constants.CorrectEmail);
+        selectors.userNameField().type(constants.correctEmail);
     }
 
     inputCorrectPassword() {
-        selectors.userPasswordField().type(constants.CorrectPassword);
+        selectors.userPasswordField().type(constants.correctPassword);
     }
 
     clickLoginButton(){
@@ -17,11 +17,11 @@ export class LoginPage extends BasePage{
     }
 
     inputIncorrectEmail(){
-        selectors.userNameField().type(constants.IncorrectEmail);
+        selectors.userNameField().type(constants.incorrectEmail);
     }
 
     inputIncorrectPassword(){
-        selectors.userPasswordField().type(constants.IncorrectPassword);
+        selectors.userPasswordField().type(constants.incorrectPassword);
     }
 
     inputAdminUsername(){
@@ -33,8 +33,16 @@ export class LoginPage extends BasePage{
     }
 
     chooseAgency(){
-        selectors.chooseAgency().select('Alta Hospice Care').should('have.value', 'AHCA');
+        selectors.chooseAgency().select('Louisa Agency');
     }
+
+    popupModal(){
+        selectors.popupModal().click();
+    }
+    checkheaderUsername(){
+        selectors.headerUserName();
+    }
+
 }
 
 export const loginPage = new LoginPage();

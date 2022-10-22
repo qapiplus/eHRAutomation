@@ -1,14 +1,14 @@
 {
-    "CorrectEmail": "louisaharutyunyan7@gmail.com",
-    "CorrectPassword": "LouisHar7!",
-    "IncorrectEmail": "123",
-    "IncorrectPassword": "456",
-    "adminUsername": "admin",
-    "adminPassword": "Arm3nia!",
+    "correctEmail": "louisaharutyunyan7@gmail.com",
+    "correctPassword": "LouisHar7!",
+    "incorrectEmail": "123",
+    "incorrectPassword": "456",
+    "adminUsername": "automation",
+    "adminPassword": "!QAZ2wsx",
     "name": "LouisA",
     "surname": "Brown",
-    "ExistingEmailAddress": "louisaharutyunyan7@gmail.com",
-    "EmailAddress": "radball6@filevino.com",
-    "ValidPassword": "!QAZ2wsx",
-    "InvalidPassword": "123"
+    "existingEmailaddress": "louisaharutyunyan7@gmail.com",
+    "emailAddress": "radball6@filevino.com",
+    "validPassword": "!QAZ2wsx",
+    "invalidPassword": "123"
 }
