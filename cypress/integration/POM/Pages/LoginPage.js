@@ -33,15 +33,16 @@ export class LoginPage extends BasePage{
     }
 
     chooseAgency(){
-        selectors.chooseAgency().select('Louisa Agency');
-    }
-
-    popupModal(){
-        selectors.popupModal().click();
+        selectors.chooseAgency().select(constants.agency_name);
     }
     checkheaderUsername(){
         selectors.headerUserName();
     }
+    checkAlertPopupErrorMessage(alerttext){
+        selectors.alertPopupText().should("have.text",alerttext);
+    }
+
+ 
 
 }
 

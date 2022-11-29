@@ -10,5 +10,8 @@
     "existingEmailaddress": "louisaharutyunyan7@gmail.com",
     "emailAddress": "radball6@filevino.com",
     "validPassword": "!QAZ2wsx",
-    "invalidPassword": "123"
+    "invalidPassword": "123",
+    "wrong_email_alert_popup_text": "Invalid user name or password",
+    "pageHeaderh3": "Welcome eHR!",
+    "agency_name":"Louisa Agency"
 }

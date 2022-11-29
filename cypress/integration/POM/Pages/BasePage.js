@@ -1,4 +1,6 @@
 import * as selectors from "./BasePageSelectors";
+import * as constants from "../../../fixtures/Constants.json";
+
 
 class BasePage {
 
@@ -14,8 +16,12 @@ class BasePage {
     }
 
     pageHeaderh3(){
-        selectors.pageHeaderh3().should('contain.text', 'Welcome eHR!');
+        selectors.pageHeaderh3().should('contain.text', constants.pageHeaderh3);
     }
-    
+    popupModal(){
+        selectors.popupModal().click();
+    }
+  
+  
 }
 export default BasePage;

@@ -1,4 +1,6 @@
 import { LoginPage, loginPage } from "../Pages/LoginPage";
+import * as constants from '../../../fixtures/Constants.json'
+
 
 describe('Check login page functionality',() =>{
 
@@ -18,30 +20,23 @@ describe('Check login page functionality',() =>{
         loginPage.inputIncorrectPassword();
         loginPage.clickLoginButton();
         loginPage.clickAlertPopupContinueButton();
-        loginPage.popupModal();
+        loginPage.checkAlertPopupErrorMessage(constants.wrong_email_alert_popup_text);
+        
     })
     it('is possible to login to HR successfully as admin', () =>{
         loginPage.inputAdminUsername();
         loginPage.inputAdminPassword();
         loginPage.clickLoginButton();
-        loginPage.pageHeaderh3('Welcome eHR!')
+        loginPage.pageHeaderh3()
         loginPage.clickLoginButton();
-        loginPage.checkheaderUsername('Ehr Automation');
-        })
+        loginPage.checkheaderUsername();
+})
 
-    it.only('is possible to login to HR successfully as admin by choosing agency', () =>{
-        // loginPage.inputAdminUsername();
-        // loginPage.inputAdminPassword();
-        // loginPage.clickLoginButton();
-        // loginPage.chooseAgency();
-        // loginPage.clickLoginButton();
-        // loginPage.checkPageHeader('Welcome, Louisa Agency');
-
-
+    it('is possible to login to HR successfully as admin by choosing agency', () =>{
         loginPage.inputAdminUsername();
         loginPage.inputAdminPassword();
         loginPage.clickLoginButton();
-        loginPage.pageHeaderh3('Welcome admin!');
+        loginPage.pageHeaderh3();
         loginPage.chooseAgency();
         loginPage.clickLoginButton();
         loginPage.checkPageHeader('Welcome, Louisa Agency');
