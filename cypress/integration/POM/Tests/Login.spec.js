@@ -21,6 +21,7 @@ describe('Check login page functionality',() =>{
         loginPage.clickLoginButton();
         loginPage.clickAlertPopupContinueButton();
         loginPage.checkAlertPopupErrorMessage(constants.wrong_email_alert_popup_text);
+        loginPage.clickConfirmationButton();
         
     })
     it('is possible to login to HR successfully as admin', () =>{
@@ -41,5 +42,15 @@ describe('Check login page functionality',() =>{
         loginPage.clickLoginButton();
         loginPage.checkPageHeader('Welcome, Louisa Agency');
     })
+
+    // it('is possible to login to HR successfully by choosing agency', () =>{
+    //     loginPage.inputCorrectEmailByChoosingAgency();
+    //     loginPage.inputCorrectPassword();
+    //     loginPage.clickLoginButton();
+    //     loginPage.pageHeaderh3();
+    //     loginPage.chooseAgency();
+    //     loginPage.clickLoginButton();
+    //     loginPage.checkPageHeader('')
+    // })
 
 })

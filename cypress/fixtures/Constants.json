@@ -1,6 +1,7 @@
 {
     "correctEmail": "louisaharutyunyan7@gmail.com",
     "correctPassword": "LouisHar7!",
+    "correctEmailwithManyAgencies": "luizharutyunyan@gmail.com",
     "incorrectEmail": "123",
     "incorrectPassword": "456",
     "adminUsername": "automation",

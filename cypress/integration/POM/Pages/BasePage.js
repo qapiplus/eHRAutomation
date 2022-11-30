@@ -14,6 +14,10 @@ class BasePage {
     clickAlertPopupContinueButton(){
         selectors.alertPopupContinueButton().click();
     }
+    
+    clickConfirmationButton(){
+        selectors.confirmationButton().click();
+    }
 
     pageHeaderh3(){
         selectors.pageHeaderh3().should('contain.text', constants.pageHeaderh3);

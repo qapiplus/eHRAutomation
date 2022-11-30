@@ -7,6 +7,10 @@ export class LoginPage extends BasePage{
     inputCorrectEmail() {
         selectors.userNameField().type(constants.correctEmail);
     }
+    
+    inputCorrectEmailByChoosingAgency(){
+        selectors.userNameField().type(constants.correctEmailwithManyAgencies);
+    }
 
     inputCorrectPassword() {
         selectors.userPasswordField().type(constants.correctPassword);
