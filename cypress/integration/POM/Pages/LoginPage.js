@@ -4,17 +4,54 @@ import * as constants from "../../../fixtures/Constants.json";
 
 export class LoginPage extends BasePage{
 
-    inputCorrectEmail() {
-        selectors.userNameField().type(constants.email);
+    inputCorrectHospiceEmail() {
+        selectors.userNameField().type(constants.correctHospiceEmail);
+    }
+    inputCorrectHomeHealthEmail(){
+        selectors.userNameField().type(constants.correctHomeHealthEmail);
+    }
+    inputCorrectEmailByChoosingAgency(){
+        selectors.userNameField().type(constants.correctEmailwithManyAgencies);
     }
 
-    inputCorrectPassword() {
-        selectors.userPasswordField().type(constants.email);
+    inputCorrectHospicePassword() {
+        selectors.userPasswordField().type(constants.correctHospicePassword);
+    }
+    inputCorrectHomeHealthPassword(){
+        selectors.userPasswordField().type(constants.correctHomeHealthPassoword);
     }
 
     clickLoginButton(){
         selectors.loginButton().click();
     }
+
+    inputIncorrectEmail(){
+        selectors.userNameField().type(constants.incorrectEmail);
+    }
+
+    inputIncorrectPassword(){
+        selectors.userPasswordField().type(constants.incorrectPassword);
+    }
+
+    inputAdminUsername(){
+        selectors.userNameField().type(constants.adminUsername);
+    }
+
+    inputAdminPassword(){
+        selectors.userPasswordField().type(constants.adminPassword);
+    }
+
+    chooseAgency(){
+        selectors.chooseAgency().select(constants.agency_name);
+    }
+    checkheaderUsername(){
+        selectors.headerUserName();
+    }
+    checkAlertPopupErrorMessage(alerttext){
+        selectors.alertPopupText().should("have.text",alerttext);
+    }
+
+ 
 
 }
 

@@ -1,4 +1,20 @@
 {
-    "email": "blabla@bla.com",
-    "password": "blabla"
+    "correctHospiceEmail": "louisaharutyunyan7@gmail.com",
+    "correctHomeHealthEmail": "luiz.harutyunyan@gmail.com",
+    "correctHospicePassword": "LouisHar7!",
+    "correctHomeHealthPassoword": "!QAZ2wsx",
+    "correctEmailwithManyAgencies": "luizharutyunyan@gmail.com",
+    "incorrectEmail": "123",
+    "incorrectPassword": "456",
+    "adminUsername": "automation",
+    "adminPassword": "!QAZ2wsx",
+    "name": "LouisA",
+    "surname": "Brown",
+    "existingEmailaddress": "louisaharutyunyan7@gmail.com",
+    "emailAddress": "radball6@filevino.com",
+    "validPassword": "!QAZ2wsx",
+    "invalidPassword": "123",
+    "wrong_email_alert_popup_text": "Invalid user name or password",
+    "pageHeaderh3": "Welcome eHR!",
+    "agency_name":"Louisa Agency"
 }

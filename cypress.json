@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://ehrplus-dev.azurewebsites.net/",
+    "baseUrl": "https://testehr.azurewebsites.net/",
     "experimentalStudio": true,
     "chromeWebSecurity": false,
     "video": false,
