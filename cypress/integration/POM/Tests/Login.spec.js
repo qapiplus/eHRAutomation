@@ -8,9 +8,16 @@ describe('Check login page functionality',() =>{
         loginPage.navigateToTab('Account/Login')
     });
 
-    it('is possible to login to HR successfully with correct credentials', () =>{
-        loginPage.inputCorrectEmail();
-        loginPage.inputCorrectPassword();
+    it('is possible to login as Hospice to HR successfully with correct credentials', () =>{
+        loginPage.inputCorrectHospiceEmail();
+        loginPage.inputCorrectHospicePassword();
+        loginPage.clickLoginButton();
+        loginPage.checkPageHeader("Welcome, Louisa")
+    })
+
+    it('is possible to login as HomeHealth to HR successfully with correct credentials', () =>{
+        loginPage.inputCorrectHomeHealthEmail();
+        loginPage.inputCorrectHomeHealthPassword();
         loginPage.clickLoginButton();
         loginPage.checkPageHeader("Welcome, Louisa")
     })
@@ -24,14 +31,6 @@ describe('Check login page functionality',() =>{
         loginPage.clickConfirmationButton();
         
     })
-    it('is possible to login to HR successfully as admin', () =>{
-        loginPage.inputAdminUsername();
-        loginPage.inputAdminPassword();
-        loginPage.clickLoginButton();
-        loginPage.pageHeaderh3()
-        loginPage.clickLoginButton();
-        loginPage.checkheaderUsername();
-})
 
     it('is possible to login to HR successfully as admin by choosing agency', () =>{
         loginPage.inputAdminUsername();
@@ -42,15 +41,5 @@ describe('Check login page functionality',() =>{
         loginPage.clickLoginButton();
         loginPage.checkPageHeader('Welcome, Louisa Agency');
     })
-
-    // it('is possible to login to HR successfully by choosing agency', () =>{
-    //     loginPage.inputCorrectEmailByChoosingAgency();
-    //     loginPage.inputCorrectPassword();
-    //     loginPage.clickLoginButton();
-    //     loginPage.pageHeaderh3();
-    //     loginPage.chooseAgency();
-    //     loginPage.clickLoginButton();
-    //     loginPage.checkPageHeader('')
-    // })
 
 })

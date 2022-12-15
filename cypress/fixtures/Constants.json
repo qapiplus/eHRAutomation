@@ -1,6 +1,8 @@
 {
-    "correctEmail": "louisaharutyunyan7@gmail.com",
-    "correctPassword": "LouisHar7!",
+    "correctHospiceEmail": "louisaharutyunyan7@gmail.com",
+    "correctHomeHealthEmail": "luiz.harutyunyan@gmail.com",
+    "correctHospicePassword": "LouisHar7!",
+    "correctHomeHealthPassoword": "!QAZ2wsx",
     "correctEmailwithManyAgencies": "luizharutyunyan@gmail.com",
     "incorrectEmail": "123",
     "incorrectPassword": "456",

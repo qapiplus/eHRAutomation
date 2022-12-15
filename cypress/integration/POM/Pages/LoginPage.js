@@ -4,16 +4,21 @@ import * as constants from "../../../fixtures/Constants.json";
 
 export class LoginPage extends BasePage{
 
-    inputCorrectEmail() {
-        selectors.userNameField().type(constants.correctEmail);
+    inputCorrectHospiceEmail() {
+        selectors.userNameField().type(constants.correctHospiceEmail);
     }
-    
+    inputCorrectHomeHealthEmail(){
+        selectors.userNameField().type(constants.correctHomeHealthEmail);
+    }
     inputCorrectEmailByChoosingAgency(){
         selectors.userNameField().type(constants.correctEmailwithManyAgencies);
     }
 
-    inputCorrectPassword() {
-        selectors.userPasswordField().type(constants.correctPassword);
+    inputCorrectHospicePassword() {
+        selectors.userPasswordField().type(constants.correctHospicePassword);
+    }
+    inputCorrectHomeHealthPassword(){
+        selectors.userPasswordField().type(constants.correctHomeHealthPassoword);
     }
 
     clickLoginButton(){
